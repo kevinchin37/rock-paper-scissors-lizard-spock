@@ -1,0 +1,41 @@
+.shapes {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.shapes-grid {
+    background: url('../../assets/bg-pentagon.svg') center;
+    background-repeat: no-repeat;
+    display: grid;
+    gap: 0px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.rock-grid {
+    transform: translateX(-50px);
+}
+
+.paper-grid {
+    transform: translateY(-40px);
+}
+
+.lizard-grid {
+    transform: translateX(50px);
+}
+
+.spock-grid {
+    transform: translateY(-40px);
+}
+
+@media (max-width: 750px) {
+    .shapes-grid {
+        background-size: 70%;
+    }
+
+    .spock-grid,
+    .paper-grid {
+        transform: translateY(-25px);
+    }
+}

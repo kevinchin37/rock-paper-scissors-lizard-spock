@@ -1,0 +1,105 @@
+.outer-circle {
+    align-items: center;
+    border-bottom: 5px solid;
+    border-radius: 50%;
+    display: flex;
+    height: 145px;
+    justify-content: center;
+    width: 145px;
+    z-index: 2;
+}
+
+.inner-circle {
+    align-items: center;
+    background: #e6e7e9;
+    border-radius: 50%;
+    border-top: 5px solid #c0bcd7;
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    width: 75%;
+}
+
+.inner-circle:before {
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 50%;
+}
+
+.rock {
+    background: linear-gradient(#db2e4e, #dd405d);
+    border-color:#9c1631;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.paper {
+    background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    border-color:#2c44c1;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.scissors {
+    background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    border-color:#c66f20;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.lizard {
+    background: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    border-color:#6039a6;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.spock {
+    background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    border-color:#2c8fae;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.rock > .inner-circle:before {
+    background: url('../../assets/icon-rock.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.paper > .inner-circle:before {
+    background: url('../../assets/icon-paper.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.scissors > .inner-circle:before {
+    background: url('../../assets/icon-scissors.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.lizard > .inner-circle:before {
+    background: url('../../assets/icon-lizard.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.spock > .inner-circle:before {
+    background: url('../../assets/icon-spock.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.placeholder {
+    background: #17223e;
+    border: none;
+}
+
+.placeholder > .inner-circle {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .outer-circle {
+        height: 100px;
+        width: 100px;
+    }
+}

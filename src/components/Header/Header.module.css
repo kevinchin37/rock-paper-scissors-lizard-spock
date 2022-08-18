@@ -1,0 +1,26 @@
+.header {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 15px 35px;
+    width: 670px;
+}
+
+@media (max-width: 750px) {
+    .header {
+        align-items: center;
+        display: flex;
+        margin: 0 30px;
+        margin-bottom: 50px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+}

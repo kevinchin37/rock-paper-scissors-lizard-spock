@@ -1,0 +1,25 @@
+.rules-button {
+    background: transparent;
+    bottom: 30px;
+    border-radius: 8px;
+    color: var(--main-font-light);
+    font-family: inherit;
+    font-size: 18px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    width: 130px;
+}
+
+.rules-button:hover {
+    color: var(--main-font-dark);
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .rules-button {
+        display: block;
+        margin: 50px auto;
+        position: initial;
+    }
+}
